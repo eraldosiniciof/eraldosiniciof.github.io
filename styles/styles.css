@@ -1,0 +1,65 @@
+body {
+    background-color: teal;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+body #navegar1 {
+    padding: 1px;
+    text-align: center;
+    background-color: rgba(0, 71, 112, 0.479);
+}
+
+body #navegar2 {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    background-color: rgba(0, 71, 112, 0.479);
+}
+
+body #navegar3 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgba(0, 71, 112, 0.479);
+}
+
+body a {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: yellow;
+    text-decoration: none;
+}
+
+body #principal #lista {
+    display: flex;
+    flex-direction: column;
+    line-height: 300%;
+    text-align: left;
+    height: 200px;
+    
+}
+
+body #principal #textos {
+    text-align: left;
+}
+
+input {
+    margin: 20px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    font-size: 15pt;
+}
+
+#field {
+    display: flex;
+    align-content: space-between;
+}
+
+#menor {
+    font-size: 15px;
+}

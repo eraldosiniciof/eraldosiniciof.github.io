@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Investing Descomplicado - Professor Athur Dantas</title>
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/outros/valueInvesting/styles/styles.css">
+
+    <div id="navegar1">
+        <p>Value Investing Descomplicado<br />Estudo com Arthur Dantas</p>
+    </div>
+    <div id="navegar2">
+        <a href="/outros/valueInvesting/pag2.html">Voltar</a>
+        <a href="#"></a>
+    </div>
+    <div id="principal">
+        <h1>Ajuste de retorno pelo risco:</h1>
+        <div id="menor">
+            <p>Digite a taxa sem o %</p>
+        </div>
+        <div id="calculo">
+            <div id="field">
+                <input type="number" name="retorno" id="retorno">
+                <p>Retorno</p>
+            </div>
+            <div id="field">
+                <input type="number" name="livre" id="livre">
+                <p>Taxa Livre de Risco</p>
+            </div>
+            <div id="field">
+                <input type="number" name="vol" id="vol">
+                <p>Volatilidade do Ativo</p>
+            </div>
+            <input type="button" value="Calcular" onclick="calculo()">
+            <div id="resultado"></div>
+            <script>
+
+                function calculo() {
+                    const retorno = document.querySelector("#retorno")
+                    const livre = document.querySelector("#livre")
+                    const vol = document.querySelector("#vol")
+                    const result = document.querySelector("#resultado")
+                    
+                    const n1 = Number(retorno.value / 100)
+                    const n2 = Number(livre.value / 100)
+                    const n3 = Number(vol.value / 100)
+
+                    const total = ((n1 - n2) / n3).toFixed(1)
+                    
+                    result.innerHTML = `Resultado: ${total}`
+                }
+
+
+            </script>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
