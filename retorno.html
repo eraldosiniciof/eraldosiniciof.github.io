@@ -9,13 +9,13 @@
 
 <body>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/outros/valueInvesting/styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 
     <div id="navegar1">
         <p>Value Investing Descomplicado<br />Estudo com Arthur Dantas</p>
     </div>
     <div id="navegar2">
-        <a href="/outros/valueInvesting/pag2.html">Voltar</a>
+        <a href="pag2.html">Voltar</a>
         <a href="#"></a>
     </div>
     <div id="principal">
@@ -38,25 +38,7 @@
             </div>
             <input type="button" value="Calcular" onclick="calculo()">
             <div id="resultado"></div>
-            <script>
-
-                function calculo() {
-                    const retorno = document.querySelector("#retorno")
-                    const livre = document.querySelector("#livre")
-                    const vol = document.querySelector("#vol")
-                    const result = document.querySelector("#resultado")
-                    
-                    const n1 = Number(retorno.value / 100)
-                    const n2 = Number(livre.value / 100)
-                    const n3 = Number(vol.value / 100)
-
-                    const total = ((n1 - n2) / n3).toFixed(1)
-                    
-                    result.innerHTML = `Resultado: ${total}`
-                }
-
-
-            </script>
+            <script src="./scripts/calculos.js"></script>
         </div>
     </div>
 
